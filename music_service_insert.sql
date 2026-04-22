@@ -1,0 +1,87 @@
+INSERT INTO genre (genre_name)
+VALUES ('Pop'),
+    ('Rock'),
+    ('Classical');
+INSERT INTO executor (executor_name)
+VALUES ('Lady Gaga'),
+    ('Taylor Swift'),
+    ('Linkin Park'),
+    ('Green Day'),
+    ('The Piano Guys'),
+    ('Howard Shore');
+INSERT INTO album (album_name, year_of_release)
+VALUES ('A Star Is Born', 2018),
+    ('Chromatica', 2020),
+    ('Lover', 2019),
+    ('Midnights', 2022),
+    ('One More Light', 2017),
+    ('From Zero', 2024),
+    ('Revolution Radio', 2016),
+    ('Father of All Motherfuckers', 2020),
+    ('Christmas Together', 2017),
+    ('Limitless', 2018),
+    ('The Song of Names ', 2020),
+    ('Pieces Of A Woman', 2021);
+INSERT INTO track (album_id, track_name, duration)
+VALUES (1, 'Before I Cry', 259),
+    (1, 'Hair Body Face', 203),
+    (2, 'Plastic Doll', 221),
+    (2, 'Enigma', 179),
+    (3, 'Cruel Summer', 178),
+    (3, 'Daylight', 295),
+    (4, 'Lavender Haze', 202),
+    (4, 'Midnight Rain', 175),
+    (5, 'Nobody Can Save Me', 225),
+    (5, 'Talking to myself', 231),
+    (6, 'Over Each Other', 190),
+    (6, 'Casualty', 140),
+    (7, 'Say Goodbye', 219),
+    (7, 'Outlaws', 302),
+    (8, 'Fire, Ready, Aim', 112),
+    (8, 'Meet Me on the Roof', 159),
+    (9, 'Ode to Joy to the World', 247),
+    (9, 'What Child is This', 179),
+    (10, 'In my Blood', 238),
+    (10, 'Limitless', 271),
+    (11, 'Treblinka Memorial', 130),
+    (11, 'Stoke Newington', 42),
+    (12, 'mystic River', 396),
+    (12, 'Elizabeth', 372);
+INSERT INTO collection (collection_name, year_of_release)
+VALUES ('Pop music', 2019),
+    ('Rock music', 2024),
+    ('Classic music', 2020),
+    ('Mix music', 2021);
+INSERT INTO album_executor (album_id, executor_id)
+VALUES (1, 1),
+    (2, 1),
+    (3, 2),
+    (4, 2),
+    (5, 3),
+    (6, 3),
+    (7, 4),
+    (8, 4),
+    (9, 5),
+    (10, 5),
+    (11, 6),
+    (12, 6);
+INSERT INTO genre_executor (genre_id, executor_id)
+VALUES (1, 1),
+    (1, 2),
+    (2, 3),
+    (2, 4),
+    (3, 5),
+    (3, 6);
+INSERT INTO collection_track (collection_id, track_id)
+VALUES (1, 3),
+    (1, 5),
+    (1, 6),
+    (2, 11),
+    (2, 12),
+    (2, 10),
+    (3, 22),
+    (3, 20),
+    (3, 21),
+    (4, 2),
+    (4, 9),
+    (4, 21);
